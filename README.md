@@ -1,15 +1,16 @@
 **Introduction**
 
-PaCeQuant is a Fiji Plug-in and it is the leading tool for pavement cell shape quantification1. PaCeQuant can calculate 28 shape values from each pavement cell. Normally, a few hundreds of cells are analyzed per conditions, therefore, these data sets can become difficult to manage manually. In PaCeQuant, each image generates a file results table. In this repository, we share a custom code that compiles those results tables into one data-frame suitable for building ggplot2 graphs. 
+PaCeQuant is a Fiji Plug-in and it is the leading tool for pavement cell shape quantification (Moller _et al_, 2017). PaCeQuant can calculate 28 shape values from each pavement cell. Normally, a few hundred cells are analyzed per condition, therefore, these data sets can become difficult to manage manually. In PaCeQuant, each image generates a separate results file called "-table". In this repository, we share a custom code that compiles those result tables into one data-frame suitable for building ggplot2 graphs. 
 
 **Other Solutions**
-PaceQuant is a Fiji Plug-in. PaCeQuantAna2 is a very useful Rstudio-compatible R library for analysis results obtained by PaCeQuant. However, the final figures are limited in their customization and specific pairwise statistical analysis is difficult to integrate.
+PaceQuant is a Fiji Plug-in. PaCeQuantAna (Poeschl _et al_, 2020) is a very useful Rstudio-compatible R library for analysis of the results obtained by PaCeQuant. However, the final figures are limited in their customization and specific pairwise statistical analysis is difficult to integrate.
 
 **This Solution**
 
-In this repository, we share a custom code that compiles PaCeQuant 2  result tables into one data-frame suitable for building ggplot2 graphs. Once the data-frame is built, the is more flexibility to build graphs suited to the user’s needs.
+In this repository, we share a custom code that compiles PaCeQuant result tables into one data-frame suitable for building ggplot2 graphs. Once the data-frame is built, there is more flexibility to build graphs suited to the user’s needs.
 
-This code : 1) will look for "results" folders and compile result tables within 2) use the name of the parent folder ("var1_var2") and assigned those variable to the compiled data 3) generate a data-frama ready to use with ggplot2
+This code : 1) will look for "results" folders and compile result tables within 2) use the name of the parent folder ("var1_var2") and assigned those variable to the compiled data 3) generate a data-frame ready to use with ggplot2 generating beautifuls graphs like this one:
+![image](https://github.com/pperezh/global-local-auxin/assets/80292580/d705bb5c-402b-4e5a-af9f-8294b757a4f0)
 
 **To use this code:**
 
