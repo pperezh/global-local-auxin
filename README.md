@@ -10,13 +10,16 @@ PaceQuant is a Fiji Plug-in. PaCeQuantAna (Poeschl _et al_, 2020) is a very usef
 In this repository, we share a custom code that compiles PaCeQuant result tables into one data-frame suitable for building ggplot2 graphs. Once the data-frame is built, there is more flexibility to build graphs suited to the user’s needs.
 
 This code : 1) will look for "results" folders and compile result tables within 2) use the name of the parent folder ("var1_var2") and assigned those variable to the compiled data 3) generate a data-frame ready to use with ggplot2. See the following example.
-<img src="https://github.com/pperezh/global-local-auxin/assets/80292580/d705bb5c-402b-4e5a-af9f-8294b757a4f0" width="200" height="200">
-This is an example of a split violin graph. In y-axis is displaying one of the 28 shape values calculated from PaCeQuant. In the x-axis are
+
+<img src= "https://github.com/pperezh/global-local-auxin/assets/80292580/e54c8114-cd43-488c-a576-1c07355f0d3c" width="200" height="300">
+
+This is an example of a split violin graph. In y-axis is displaying one of the 28 shape values calculated from PaCeQuant, in this particular case "Lobes per cell". In the x-axis is variable1 (Genotype) and the 2 color on each violin are representing variable2 (Treament). 
+
 **To use this code:**
 
 1. In RStudio, set as working directory the same filepath used in PaCeQuant.  
 2. Name the folders using 2 variables, e.g. “time”, “position”, “genotype”, “treatment”, “concentration”, 
-3. Make sure the two variables are separated with an underscore, e.g “wt_mock” or "mut1_hormone"
+3. Make sure the two variables are separated with an underscore, e.g “wt_mock”, “wt_hormone”, "mutant_mock", "mutant_hormone"
 4. By default these variables are “Genotype” and “Treatment”.
 5. If variables different from Genotype and Treatment will be used, please introduce the name of those 2 variables in each line of the code that annotated with  “### Change accordingly”
 
