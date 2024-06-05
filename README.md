@@ -10,7 +10,7 @@ PaceQuant is a Fiji Plug-in. PaCeQuantAna (Poeschl _et al_, 2020) is a very usef
 In this repository, we share a custom code that compiles PaCeQuant result tables into one data-frame suitable for building ggplot2 graphs. Once the data-frame is built, there is more flexibility to build graphs suited to the user’s needs.
 
 This code : 1) will look for "results" folders and compile result tables within 2) use the name of the parent folder ("var1_var2") and assigned those variable to the compiled data 3) generate a data-frame ready to use with ggplot2 generating beautifuls graphs like this one:
-<img src="https://github.com/pperezh/global-local-auxin/assets/80292580/d705bb5c-402b-4e5a-af9f-8294b757a4f0" width="100 height="100">
+<img src="https://github.com/pperezh/global-local-auxin/assets/80292580/d705bb5c-402b-4e5a-af9f-8294b757a4f0" width="100" height="100">
 
 **To use this code:**
 
