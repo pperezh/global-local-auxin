@@ -1,3 +1,6 @@
+# for ggplot2, dplyr, tidyr,etc
+library (tidyverse)
+
 #### Automatic upload of Data - excluding lobes-table.txt ####
 directoriesAll <- list.dirs(full.names = TRUE ,recursive = FALSE)
 directoriesOutput <-grep("output*",directoriesAll, value=TRUE)            #  This line is to remove PaCeQuantAna "output*" folders
