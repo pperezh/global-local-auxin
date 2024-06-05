@@ -9,14 +9,15 @@ PaceQuant is a Fiji Plug-in. PaCeQuantAna2 is a very useful Rstudio-compatible R
 
 In this repository, we share a custom code that compiles PaCeQuant 2  result tables into one data-frame suitable for building ggplot2 graphs. Once the data-frame is built, the is more flexibility to build graphs suited to the user’s needs.
 
+This code will: 1) look "results" foolder and compile result tables 2) use the name of the parent folder ("var1_var2") and assigned those variable to the data 3) generate a data-frama ready to use with ggplot2
+
 **To use this code:**
 
-1. Arrange your data in folders named with 2 variables in your experiment 
-2. Name the folders using 2 variables, e.g. “time”, “position”, “genotype”, “treatment”, “concentration”, 
-3. Make sure the two variables are separated with an underscore “_”.
+1. In RStudio, set as working directory the filepath of your PaCeQuant results.  
+2. Name the parent folders using 2 variables, e.g. “time”, “position”, “genotype”, “treatment”, “concentration”, 
+3. Make sure the two variables are separated with an underscore, e.g “wt_mock” or "mut1_hormone"
 4. By default these variables are “Genotype” and “Treatment”.
-e.g: “wt_mock”, “wt_hormone”, “mutant1_mock”, “mutant1_hormone”, “mutant2_mock”, “mutant2_hormone”, etc
-5. If variables different than Genotype and Treatment will be used, Introduce the name of the 2 variables in the code as indicated by “ ### Change accordingly”
+5. If variables different from Genotype and Treatment will be used, please introduce the name of those 2 variables in each line of the code that annotated with  “### Change accordingly”
 
 **This code was built and used in the following research project:**
 
